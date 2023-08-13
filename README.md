@@ -1,18 +1,12 @@
-##Command to clean compile;
-mvn clean compile
-
-## Command to create jar
+# Command to build the jar;
+mvn clean install
 mvn package
 
-## command to create docker image
+# command to build docker image;
 docker build -t spring-boot-docker .
 
-## docker file can be viewed using following command;
-docker image ls
+# command to run the docker image;
+docker run -p 8080:8080 spring-boot-docker
 
-## docker file gets created at following location;
-
-## move this image to docker hub
-
-## how to access private docker repo
-¡
+# command to access the application;
+http://localhost:8080
